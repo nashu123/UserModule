@@ -1,0 +1,15 @@
+.bg-image{
+    /* background-image: url('../../assets/bg.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-bg{
+    background-color: #1d2124;
+    padding: 16px;
+}
+
+small{
+    color:red
+}

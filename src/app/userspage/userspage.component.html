@@ -1,0 +1,37 @@
+<section>
+    <div class="container-fluid">
+        <div class="row nav-bg" style="justify-content: space-between;">
+            <h4 style="color:#fff">Welcome users</h4>
+            <div class="ml-2" >
+                <button class="btn btn-primary" (click)="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="mt-4">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Firstname</th>
+            <th scope="col">Lastname</th>
+            <th scope="col">Email</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Mobile Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let elem of userslist">
+            <th scope="row">1</th>
+            <td>{{elem.firstname}}</td>
+            <td>{{elem.lastname}}</td>
+
+            <td>{{elem.emailid}}</td>
+            <td>{{elem.gender}}</td>
+            <td>{{elem.mobileno}}</td>
+          </tr>
+     
+        </tbody>
+      </table>
+</div>
